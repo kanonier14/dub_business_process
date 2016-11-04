@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Business process creating user</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{css/main.css}"/>
+</head>
+<body>
+<div th:include="partial/header"/>
+<div>Создание нового пользователя</div>
+
+<form method="post" action="/user/create" name="user_create_form">
+    <label>Имя</label>: <input type="firstName" name="firstName"/>
+    <label>Фамилия</label>: <input type="lastName" name="lastName"/>
+    <button>Сохранить</button>
+</form>
+
+<div th:include="partial/footer"/>
+</body>
+</html>

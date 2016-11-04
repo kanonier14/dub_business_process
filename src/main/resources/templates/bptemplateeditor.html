@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Business process template editor</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{css/main.css}"/>
+</head>
+<body>
+<div th:include="partial/header"/>
+<div>Создание шаблона бизнесс-процесса</div>
+
+<div data-component="BusinessProcessFormCreation">
+</div>
+
+<div th:include="partial/footer"/>
+</body>
+</html>
